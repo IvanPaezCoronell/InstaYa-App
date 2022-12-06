@@ -11,19 +11,19 @@ import {
 
 const initialValues = {
 	isFragile: true,
-	width: '1',
-	height: '1',
-	depth: '1',
-	weight: '1',
-	dueDate: '2022-12-01',
+	width: '4',
+	height: '4',
+	depth: '8',
+	weight: '20',
+	dueDate: '2022-12-07',
 	dueHour: '12:00:00',
 	state: 'guardado',
 	fromCity: 'Barranquilla',
-	fromAddress: 'Cra. 45 #53-127',
-	toCity: 'Santa Marta',
-	toAddress: 'Cl. 21 #2A-05',
-	toOwner: 'Pepé Santos',
-	toOwnerId: '12345678901',
+	fromAddress: 'Cra 50 #74-59',
+	toCity: 'Cali',
+	toAddress: 'Cl 5b #27-8',
+	toOwner: 'Erika Cardona',
+	toOwnerId: '123456789',
 };
 
 export const formFields = [
@@ -160,7 +160,7 @@ export function NewRequestForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'toOwner',
-						placeholder: 'Juanito Perez',
+						placeholder: 'Ivan Paez',
 						required: true,
 					}}
 				/>
@@ -244,7 +244,7 @@ export function NewRequestForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'width',
-						placeholder: '1',
+						placeholder: '4',
 						required: true,
 					}}
 				/>
@@ -256,7 +256,7 @@ export function NewRequestForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'height',
-						placeholder: '1',
+						placeholder: '4',
 						required: true,
 					}}
 				/>
@@ -268,7 +268,7 @@ export function NewRequestForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'depth',
-						placeholder: '1',
+						placeholder: '8',
 						required: true,
 					}}
 				/>
@@ -281,7 +281,7 @@ export function NewRequestForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'weight',
-						placeholder: '1',
+						placeholder: '20',
 						required: true,
 					}}
 				/>
@@ -309,7 +309,7 @@ export function NewRequestForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'fromAddress',
-						placeholder: 'Km 5, Vía Puerto Colombia',
+						placeholder: 'cra 5 #5b - 79',
 						required: true,
 					}}
 				/>
@@ -325,7 +325,7 @@ export function NewRequestForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'toCity',
-						placeholder: 'Santa Marta',
+						placeholder: 'Cali',
 						required: true,
 					}}
 				/>
@@ -337,7 +337,7 @@ export function NewRequestForm() {
 					onError={toggleFieldError}
 					inputProps={{
 						name: 'toAddress',
-						placeholder: 'Cl. 21 #2A-05',
+						placeholder: 'Cl 21 #2A-05',
 						required: true,
 					}}
 				/>

@@ -11,7 +11,7 @@ export const privatePing = () =>
 			.catch((err) => reject(err));
 	});
 
-export const signIn = (body) =>
+export const signIn = (body) =>  
 	new Promise((resolve, reject) => {
 		base
 			.post(`${controller}/sign-in`, body)
